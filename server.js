@@ -1,7 +1,6 @@
-require('dotenv').config();
-
-const express = require('express');
 const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+
 const cors = require('cors');
 const helmet = require('helmet');
 const contactRoutes = require('./src/routes/contactRoutes');

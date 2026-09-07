@@ -4,6 +4,9 @@ node_modules/
 # Environment variables
 .env
 
+# Workflow (local ignore)
+.github/
+
 # Logs
 logs/
 *.log

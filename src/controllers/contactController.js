@@ -53,6 +53,8 @@ const handleContactForm = async (req, res) => {
     res.status(500).json({
       success: false,
       message: userMessage,
+      errorDetail: error.message,
+      errorCode: error.code || null,
     });
   }
 };
